@@ -1,0 +1,8 @@
+echo "RFR is an item/s removal tool from the recents list.  It requires xmlstartlet."
+echo "Removing automatic sets from recents list..."
+xmlstarlet ed -L -d "/xbel/bookmark[starts-with(@href, 'file:///home/$USER/.zaux')]" ~/.local/share/recently-used.xbel
+if [ $# -gt 0 ]; then
+  echo "Removing automatic sets from recents list..."
+  xmlstarlet ed -L -d "/xbel/bookmark[starts-with(@href, 'file:///$1')]" ~/.local/share/recently-used.xbel
+fi
+
