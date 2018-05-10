@@ -1,8 +1,15 @@
-echo "RFR is an item/s removal tool from the recents list.  It requires xmlstartlet."
+echo "RFR version 0.2 is an item/s removal tool from the Linux (Mint) recents list.  It requires xmlstarlet."
 echo "Removing automatic sets from recents list..."
 xmlstarlet ed -L -d "/xbel/bookmark[starts-with(@href, 'file:///home/$USER/.zaux')]" ~/.local/share/recently-used.xbel
 if [ $# -gt 0 ]; then
-  echo "Removing automatic sets from recents list..."
-  xmlstarlet ed -L -d "/xbel/bookmark[starts-with(@href, 'file:///$1')]" ~/.local/share/recently-used.xbel
+  if [ $1 == "--help" ]; then
+    echo "Usage: $ (path to)/rfr /full-path-prefix-of-items-to-remove-from-recents-list"
+    echo "Example: $ ./rfr /home/user1/Downloads/"
+    echo "Notes: Spaces in args list are ignored, i.e., all args are treated as only one argument."
+    echo "Released under the conditions of GNU GPL."
+  else
+    echo "Removing custom set of arguments from recents list..."
+    xmlstarlet ed -L -d "/xbel/bookmark[starts-with(@href, 'file://$*')]" ~/.local/share/recently-used.xbel
+  fi
 fi
 
