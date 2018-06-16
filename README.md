@@ -1,4 +1,4 @@
-== Introduction ==
+# Introduction
 
 **rfr** aka **Remove From Recents** is a primitively simple privacy enhancement utility that has the purpose
 of selectively removing listed recent items from a Linux user account.  The recent items can be found in the
@@ -6,7 +6,7 @@ XML file:
 
   `~/.local/share/recently-used.xbel`
 
-== Installation Instructions ==
+# Installation Instructions
 
 0. Download rfr from github.com.
 
@@ -41,13 +41,13 @@ XML file:
 
     4.1.1. Right-click on the Super menu and click on **Preferences**.  Under **Plugins** tab,
            check **Show recent documents plugin**.  Your Super menu should now show Recents places and Recents list.
-
+    
     4.1.2. Browse `recent:///` with Nautilus or Nemo or any of your file and folder explorer.
 
   4.2. Fire up a console terminal and issue rfr with an argument and without an argument.  An acceptable and valid
        argument is actually a prefix to an item to be removed with its full and complete pathname.
 
-== Usage Instructions ==
+# Usage Instructions
 
 Simply issue the following console command:
 
