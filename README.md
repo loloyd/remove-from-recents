@@ -6,14 +6,18 @@ XML file:
 
   `~/.local/share/recently-used.xbel`
 
+**rfr** requires xmlstarlet to function properly.
+
 # Installation Instructions
 
-0. Download rfr from github.com.
+0. Download rfr from github.com.  Ensure that xmlstarlet is installed first.
 
-  ```
-  $ cd ~
-  $ git clone https://github.com/loloyd/remove-from-recents.git`
-  ```
+    ```
+    $ sudo apt update
+    $ sudo apt install xmlstarlet
+    $ cd ~
+    $ git clone https://github.com/loloyd/remove-from-recents.git`
+    ```
 
 1. Ensure that rfr is executable.
 
