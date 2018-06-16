@@ -17,17 +17,17 @@ XML file:
 
 1. Ensure that rfr is executable.
 
-  `$ chmod +x ~/remove-from-recents/rfr`
+    `$ chmod +x ~/remove-from-recents/rfr`
 
 2. Optional: Edit rfr with xed, vi, nano or any text editor of your choice so as to make the automatic item removal utility more applicable to the end user.  The row to edit is line 3, mostly the **.zaux** part.
 
 3. Optional: Make rfr available "anywhere".  Use any of the following directions - a or b.
 
-    1. Add the following line to the end of the file `~/.bashrc`:
+    1. (a) Add the following line to the end of the file `~/.bashrc`:
 
         `export PATH=$PATH:/home/$USER/remove-from-recents`
 
-    2. Copy the file `rfr` to `/home/$USER/.local/bin/.` or to `/home/$USER/bin/.` or to `/usr/local/bin` or to whichever particular location specified in $PATH.  Use the following command to discover the value in $PATH.
+    2. (b) Copy the file `rfr` to `/home/$USER/.local/bin/.` or to `/home/$USER/bin/.` or to `/usr/local/bin` or to whichever particular location specified in $PATH.  Use the following command to discover the value in $PATH.
 
         `$ echo $PATH`
 
