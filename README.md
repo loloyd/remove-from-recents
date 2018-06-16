@@ -40,12 +40,13 @@ XML file:
   4.1. Bring up a Recents view.
 
     4.1.1. Right-click on the Super menu and click on **Preferences**.  Under **Plugins** tab,
-           check **Show recent documents plugin**.  Your Super menu should now show Recents places and Recents list.
+           check **Show recent documents plugin**.  Your Super menu should now show Recents places
+           and Recents list.
     
     4.1.2. Browse `recent:///` with Nautilus or Nemo or any of your file and folder explorer.
 
-  4.2. Fire up a console terminal and issue rfr with an argument and without an argument.  An acceptable and valid
-       argument is actually a prefix to an item to be removed with its full and complete pathname.
+  4.2. Fire up a console terminal and issue rfr with an argument and without an argument.  An acceptable
+       and valid argument is actually a prefix to an item to be removed with its full and complete pathname.
 
 # Usage Instructions
 
