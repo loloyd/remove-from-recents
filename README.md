@@ -23,13 +23,13 @@ XML file:
    automatic item removal utility more applicable to the end user.
    The row to edit is line 3, mostly the **.zaux** part.
 
-3. Optional: Make rfr available "anywhere".  Use any of the following directions - 3.1 or 3.2.
+3. Optional: Make rfr available "anywhere".  Use any of the following directions - a or b.
 
-  3.1. Add the following line to the end of the file `~/.bashrc`
+  a. Add the following line to the end of the file `~/.bashrc`:
 
     `export PATH=$PATH:/home/$USER/remove-from-recents`
 
-  3.2 Copy the file `rfr` to `/home/$USER/.local/bin/.` or to `/home/$USER/bin/.` or to `/usr/local/bin` or
+  b. Copy the file `rfr` to `/home/$USER/.local/bin/.` or to `/home/$USER/bin/.` or to `/usr/local/bin` or
     to whichever particular location specified in $PATH.
     Use the following command to discover the value in $PATH.
 
@@ -37,15 +37,15 @@ XML file:
 
 4. Test rfr.
 
-  4.1 Bring up a Recents view.
+  a. Bring up a Recents view.
 
-    4.1.1 Right-click on the Super menu and click on **Preferences**.  Under **Plugins** tab,
+    1. Right-click on the Super menu and click on **Preferences**.  Under **Plugins** tab,
       check **Show recent documents plugin**.  Your Super menu should now show Recents places
       and Recents list.
     
-    4.1.2 Browse `recent:///` with Nautilus or Nemo or any of your file and folder explorer.
+    2. Browse `recent:///` with Nautilus or Nemo or any of your file and folder explorer.
 
-  4.2 Fire up a console terminal and issue rfr with an argument and without an argument.  An acceptable
+  b. Fire up a console terminal and issue rfr with an argument and without an argument.  An acceptable
     and valid argument is actually a prefix to an item to be removed with its full and complete pathname.
 
 # Usage Instructions
